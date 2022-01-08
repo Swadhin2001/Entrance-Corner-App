@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestApp">
+        
+
+        <activity
+            android:name=".EseDepartmentsActivity"
+            android:exported="false"
+            android:parentActivityName=".PgStreamSelectionActivity"/>
+        <activity
+            android:name=".CatStreamActivity"
+            android:exported="false"
+            android:parentActivityName=".PgStreamSelectionActivity"/>
+        <activity
+            android:name=".PgStreamSelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".UgPgSelectionActivity"/>
+        <activity
+            android:name=".UgPgSelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".WChooseSubActivity"
+            android:exported="false"
+            android:parentActivityName=".SelectYourChoiceActivity"/>
+        <activity
+            android:name=".ChooseSubjectActivity"
+            android:exported="false"
+            android:parentActivityName=".SelectYourChoiceActivity"/>
+        <activity
+            android:name=".SelectYourDepartmentActivity"
+            android:exported="false"
+            android:parentActivityName=".PgStreamSelectionActivity"/>
+        <activity
+            android:name=".SelectYourChoiceActivity"
+            android:exported="false"
+            android:parentActivityName=".UgPgSelectionActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
